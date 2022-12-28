@@ -1,0 +1,120 @@
+.formacao {
+  background: #141414;
+  border-top: 2px solid #babcfa;
+}
+.cursos-texto {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #a3a3a3;
+  max-width: 40ch;
+}
+.cursos-texto strong {
+  color: white;
+}
+.cursos-formacao {
+  margin-top: 50px;
+  max-width: 200px;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+  background-color: #090909;
+  color: #a3a3a3;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.formacao-tipo {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.cursos-formacao h1 {
+  margin-bottom: 60px;
+  margin-top: 10px;
+  color: white;
+}
+.cursos-intensivos h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  position: relative;
+}
+.cursos-intensivos h3.icon::before {
+  content: "";
+  background: url(../images/Dicionario.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -50px;
+}
+.cursos-qualificacoes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cursos-qualificacoes li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.cursos-qualificacoes li h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: capitalize;
+}
+.cursos-qualificacoes li h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #8f8f8f;
+  text-transform: uppercase;
+}
+.cursos-intensivos h3.icon-2::before {
+  content: "";
+  background: url(../images/Tradutor.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -50px;
+}
+.idioma {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+  .conteudo.formacao-cont {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .cursos-qualificacoes li {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .cursos-intensivos h3.icon::before {
+    display: none;
+  }
+  .formacao-cont h2.subtitulo {
+    font-size: 64px;
+    line-height: 1.3;
+    max-width: 15ch;
+  }
+  .cursos-texto {
+    font-size: 18px;
+    font-size: 1.3;
+  }
+  .idioma {
+    margin-top: 25px;
+  }
+}

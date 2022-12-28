@@ -1,0 +1,80 @@
+.main-pai {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px 20px;
+  margin-top: 50px;
+  gap: 100px;
+  align-items: center;
+}
+.main-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.main-img img {
+  width: 100%;
+}
+.main-tipografia h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  position: relative;
+}
+.main-tipografia h1::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 150px;
+  background: url("../images/decorador.svg") no-repeat top;
+  position: absolute;
+  left: -20px;
+}
+
+.main-tipografia h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  margin-left: -80px;
+}
+.main-tipografia h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 80px;
+}
+@media (max-width: 1200px) {
+  .main-tipografia h1 {
+    font-size: 48px;
+    line-height: 80px;
+  }
+  .main-tipografia h1::before {
+    display: none;
+  }
+  .main-tipografia h2 {
+    font-size: 24px;
+    line-height: 47px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .main-tipografia h3 {
+    font-size: 16px;
+    line-height: 29px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-pai.conteudo {
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    gap: 50px;
+  }
+  .main-pai.conteudo .main-tipografia h3 {
+    margin-top: 0px;
+  }
+  .main-img img {
+    display: none;
+  }
+}

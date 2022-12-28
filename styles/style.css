@@ -1,0 +1,38 @@
+@import url(header.css);
+@import url(main.css);
+@import url(experiencia.css);
+@import url(formacao.css);
+@import url(contato.css);
+body {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 10px auto 0px auto;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.subtitulo {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 144px;
+  text-transform: uppercase;
+  word-break: break-word;
+  max-width: 6ch;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.conteudo {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns:
+    1fr
+    2fr;
+  padding: 40px 20px;
+  gap: 100px;
+}

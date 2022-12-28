@@ -1,0 +1,70 @@
+footer.contato {
+  background-color: black;
+  border-top: 1px solid blue;
+}
+.rodape {
+  max-width: 1200px;
+}
+.contato .conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.conteudo .email {
+  background-color: white;
+  padding: 20px 40px;
+  width: 400px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contato-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+  padding: 10px;
+}
+.contato-social a {
+  text-decoration: none;
+  color: white;
+}
+.contato-social a:nth-of-type(1) {
+  order: 2;
+  font-size: 20px;
+}
+.contato-social a:nth-of-type(2) {
+  order: 3;
+  color: #cccccc;
+}
+.contato-social a:nth-of-type(3) {
+  order: 1;
+  color: #8f8f8f;
+  font-size: 14px;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .contato-social {
+    flex-direction: column;
+  }
+  .conteudo .email {
+    box-shadow: 0 -1px 2px 1px  rgba(222, 222, 222, 0.8) ;
+  }
+  .contato-social a:nth-of-type(1) {
+    order: 1;
+    background-color: rgba(222, 222, 222, 0.1);
+    display: inline-block;
+    width: 8rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .contato-social a:nth-of-type(2) {
+    order: 2;
+  }
+  .contato-social a:nth-of-type(3) {
+    order: 3;
+  }
+}
